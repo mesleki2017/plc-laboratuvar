@@ -16,7 +16,7 @@
 ![](https://github.com/mesleki2017/plc-laboratuvar/blob/5c19ebc99f1fed2ecd9019f6e40316f29d2b472d/image/plc6.png)
 
 
-- Uzak IO
+- Remote IO
 
 ![](https://github.com/mesleki2017/plc-laboratuvar/blob/2ea281a135001d6a8cf1d1cf4156a55a5b3b8fe8/image/plc4.png)
 
