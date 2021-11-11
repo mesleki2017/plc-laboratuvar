@@ -7,6 +7,7 @@
 
 ![](https://github.com/mesleki2017/plc-laboratuvar/blob/2ea281a135001d6a8cf1d1cf4156a55a5b3b8fe8/image/plc2.png)
 
+---
 - S7-1200 PLC
 
 ![](https://github.com/mesleki2017/plc-laboratuvar/blob/2ea281a135001d6a8cf1d1cf4156a55a5b3b8fe8/image/plc3.png)
