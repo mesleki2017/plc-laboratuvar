@@ -1,5 +1,6 @@
 # PLC laboratuvar çalışmaları
-![]()
+## UML Diagram
+![](http://www.plantuml.com/plantuml/png/ZPFXwfim5CM_-nI-G5Wx68CnIZiTgz1kegLVWeHCBsqWcfBSRFZskofTdSt-r0-5dlpkENXotJgK5dsh8rv-PEiFgrKLHp5FGQCK-sCs_8iYNa1h44JsGoJIDgxwp1XFrKMXr49rDuzLcDbrKflBVn76DdzjZCS9MWW3Ku2MFHrzyOYc6-VYPVxmy7tVMEcrgaNIQzKrOAkvcFlsLiN_A1QSynO8AxFlksEMbA9Slr-9R_GpPd_LKADLDIKT3HeoV9Q8MwOiOuc9mxdJop4sEprB_GiSdIqbmeBl670EEqRye5g5elojiBwI4eUwv7SJKKBdZ9sevMsUrKyhKPdkJUe4xGs8cxa5C7e25t1lPxhT-LPIc_5ZOp-TalnTbZzscB6dNGimeSG0jk5aaagABg0sjX59UQwYa3YmUOzNgYI5MZdgvcG12hWCVHfBwzA0fjaN8Ffy6CyFoTIGSAhrUcpxjN6QtepZnkDoVWjTurlz1m00)
 ## Hardware
 - Mechanical structure 
 ![](https://github.com/mesleki2017/plc-laboratuvar/blob/416092a5646fb5e3a9300bf77dee24f10b799d2b/image/plc1.JPG)
@@ -15,4 +16,4 @@
 
 ---
 
-![](http://www.plantuml.com/plantuml/png/ZPFXwfim5CM_-nI-G5Wx68CnIZiTgz1kegLVWeHCBsqWcfBSRFZskofTdSt-r0-5dlpkENXotJgK5dsh8rv-PEiFgrKLHp5FGQCK-sCs_8iYNa1h44JsGoJIDgxwp1XFrKMXr49rDuzLcDbrKflBVn76DdzjZCS9MWW3Ku2MFHrzyOYc6-VYPVxmy7tVMEcrgaNIQzKrOAkvcFlsLiN_A1QSynO8AxFlksEMbA9Slr-9R_GpPd_LKADLDIKT3HeoV9Q8MwOiOuc9mxdJop4sEprB_GiSdIqbmeBl670EEqRye5g5elojiBwI4eUwv7SJKKBdZ9sevMsUrKyhKPdkJUe4xGs8cxa5C7e25t1lPxhT-LPIc_5ZOp-TalnTbZzscB6dNGimeSG0jk5aaagABg0sjX59UQwYa3YmUOzNgYI5MZdgvcG12hWCVHfBwzA0fjaN8Ffy6CyFoTIGSAhrUcpxjN6QtepZnkDoVWjTurlz1m00)
+
