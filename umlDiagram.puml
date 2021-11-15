@@ -1,48 +1,45 @@
 @startuml
-package "PLC Hardware" {
- [S7-1500] --> [Remote IO] 
- [Delta HMI] --> [S7-1500]
- [Remote IO] --> [IO Cards]
+[S7-1500] 
+ [Delta_HMI] 
+ 
 
-}
-
-node "Hydraulic" {
-
-frame "electromechanical"{
-[relay]-->[hydraulic valves]
-[hydraulic valves]-->[Hydraulic cylinder]
-}
-
-[hydraulic pump] -->[hydraulic pressure]
-}
-
-node "electric"{
- frame "Sensors"{
-[Limit Switches] --> [sensor datas]
-[pressure sensor]--> [sensor datas]
-[vibration sensor]--> [sensor datas]
-[temperature sensor]--> [sensor datas]
-}
- frame "electrical actuator"{
-  [S7-1500]-->[SINAMICS S120/G120]
-  [SINAMICS S120/G120]-->[hydraulic pump motor]
-  
-  [IO Cards]-->[relay]
-
-  
- }
-}
+[Remote_IO_Cards]<--[Digital_input]
+[Remote_IO_Cards]<--[Analog_input]
+[Remote_IO_Cards]-->[Digital_output]
+[Digital_output]-->[Relay]
+[Buttons]--> [Digital_input]
 
 
 
 
-database "Program" {
-  folder "data acquisition" {
-   [sensor datas] -->[S7-1500]
-   [S7-1500 program]-->[S7-1500]
-  }
-  folder "HMI program" {
-    [Delta HMI program] -->[S7-1500 program]
-  }
-}
+[Hydraulic_Cylinder]
+[Hydraulic_Pump] 
+[Hydraulic_Pressure]
+[SINAMICS_S120_G120]-->[Electrical_Motor]
+[Electrical_Motor]-->[Hydraulic_Pump]
+[Hydraulic_Pump]-- [Hydraulic_Pressure]
+[Relay]--[Hydraulic_Valves]
+[Hydraulic_Valves]--[Hydraulic_Cylinder]
+[Hydraulic_Pressure]--[Hydraulic_Valves]
+
+[Limit_Switches] --> [Digital_input]
+[Pressure_Sensor] --> [Analog_input]
+[Vibration_Sensor] --> [Analog_input]
+[Temperature_Sensor]--> [Analog_input]
+
+
+
+[SINAMICS_S120_G120]
+[Relay]
+
+
+
+
+[Delta_HMI] --  [S7-1500] :TCP/IP
+[S7-1500]--[Remote_IO_Cards]:TCP/IP
+[S7-1500]--[SINAMICS_S120_G120]:TCP/IP
+[S7-1500]-->[IO_Data_Record_CSV]
+[IO_Data_Record_CSV]-->[Python_DecisionTreeRegressor_Model]
+[Python_DecisionTreeRegressor_Model]<---[PLC_input_simulation]
+[Python_DecisionTreeRegressor_Model]--->[PLC_output_simulation]
 @enduml
