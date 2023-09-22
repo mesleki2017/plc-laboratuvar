@@ -1,0 +1,54 @@
+@startuml
+skinparam componentStyle uml2
+skinparam classFontColor automatic
+
+[Delta_HMI] as HMI #LightSkyBlue
+[S7-1500] as PLC #LightSkyBlue
+[Remote_IO_Cards] as IO_Cards #LightSkyBlue
+[Digital_input] as DigitalIn << (I,Green) Input >> #Red/Yellow
+[Analog_input] as AnalogIn << (I,Green) Input >> #Red/Yellow
+[Digital_output] as DigitalOut << (O,Red) Output >> #Green/Yellow
+[Relay] as Relay << (O,Red) Output >> #Green/Yellow
+[Buttons] as Buttons << (I,Green) Input >> #Red/Yellow
+[Hydraulic_Cylinder] as Cylinder #Green/Yellow
+[Hydraulic_Pump] as Pump #Green/Yellow
+[Hydraulic_Pressure] as Pressure #Green/Yellow
+[SINAMICS_S120_G120] as Drive
+[Electrical_Motor] as Motor #Green/Yellow
+[Hydraulic_Valves] as Valves #Green/Yellow
+[Limit_Switches] as Limits << (I,Green) Input >> #Red/Yellow
+[Pressure_Sensor] as PressureSensor << (I,Green) Input >> #Red/Yellow
+[Vibration_Sensor] as VibrationSensor << (I,Green) Input >> #Red/Yellow
+[Temperature_Sensor] as TemperatureSensor << (I,Green) Input >> #Red/Yellow
+[IO_Data_Record_CSV] as DataRecord
+[Python_DecisionTreeRegressor_Model] as MLModel
+[PLC_input_simulation] as PLCInput
+[PLC_output_simulation] as PLCOutput
+
+HMI -- PLC : TCP/IP
+PLC -- IO_Cards : TCP/IP
+PLC --> IO_Cards : TCP/IP
+PLC --> Drive
+PLC --> DataRecord
+DataRecord --> MLModel
+MLModel <-- PLCInput
+MLModel --> PLCOutput
+
+IO_Cards <-- DigitalIn
+IO_Cards <-- AnalogIn
+IO_Cards --> DigitalOut
+DigitalOut --> Relay
+Buttons --> DigitalIn
+
+Drive --> Motor
+Motor --> Pump
+Pump -- Pressure
+Relay -- Valves
+Valves -- Cylinder
+Pressure -- Valves
+
+Limits --> DigitalIn
+PressureSensor --> AnalogIn
+VibrationSensor --> AnalogIn
+TemperatureSensor --> AnalogIn
+@enduml
