@@ -16,7 +16,24 @@
 ---
 - Remote IO
 ![](https://github.com/mesleki2017/plc-laboratuvar/blob/2ea281a135001d6a8cf1d1cf4156a55a5b3b8fe8/image/plc4.png)
-
+---
+- 1
+![](https://github.com/mesleki2017/plc-laboratuvar/blob/845351bae37c59c70e045ade7b3736a6463058b6/image/plc8.JPG)
+---
+- 2
+![](https://github.com/mesleki2017/plc-laboratuvar/blob/845351bae37c59c70e045ade7b3736a6463058b6/image/plc9.JPG)
+---
+- 3
+![](https://github.com/mesleki2017/plc-laboratuvar/blob/845351bae37c59c70e045ade7b3736a6463058b6/image/plc10.JPG)
+---
+- 4
+![](https://github.com/mesleki2017/plc-laboratuvar/blob/845351bae37c59c70e045ade7b3736a6463058b6/image/plc11.JPG)
+---
+- 5
+![](https://github.com/mesleki2017/plc-laboratuvar/blob/845351bae37c59c70e045ade7b3736a6463058b6/image/plc12.JPG)
+---
+- 5
+![](https://github.com/mesleki2017/plc-laboratuvar/blob/845351bae37c59c70e045ade7b3736a6463058b6/image/plc13.JPG)
 ---
 
 
